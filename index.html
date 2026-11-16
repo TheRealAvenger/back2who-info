@@ -133,5 +133,21 @@
     </main>
     <footer>Back2Who · Informationen · <a href="#inhalt">Nach oben</a></footer>
   </div>
+  <!-- 1. Das Element, in dem der Übersetzer-Button erscheinen soll -->
+<div id="google_translate_element"></div>
+
+<!-- 2. Das Google Translate Skript laden -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'de', // Die Originalsprache Ihrer Website (z. B. 'de' für Deutsch)
+    includedLanguages: 'en,de', // Sprachen, die zur Auswahl stehen sollen (en = Englisch)
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//://google.com"></script>
+
 </body>
 </html>
